@@ -1,3 +1,30 @@
+@font-face {
+    font-family: 'Solskin DEMO Regular';
+    src: url('SolskinDEMO.woff2') format('woff2'),
+        url('SolskinDEMO.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Boxiest Regular';
+    src: url('Boxiest-Regular.woff2') format('woff2'),
+        url('Boxiest-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Starshines Regular';
+    src: url('Starshines.woff2') format('woff2'),
+        url('Starshines.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 a{
     color: rgb(255, 230, 117);
     text-decoration: none;
