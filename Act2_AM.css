@@ -1,0 +1,239 @@
+.Aboutme {
+    background-image: url("abbg.png");
+    height: 830px;
+    width: 100%;
+    color: white;
+}
+
+.titleclass {
+    padding: 40px;
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Starshines Regular";
+    font-weight: bolder;
+    background-color: rgba(50, 21, 49, 0.837);
+    width: 35%;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 40px;
+    margin-bottom: -30px;
+}
+
+.imagediv {
+    margin-top: 60px;
+}
+
+.pic {
+    align-items: center;
+    position: absolute;
+    margin-left: 200px;
+    width: 445px;
+    height: 500px;  
+    border-radius: 20px;
+}
+
+.pic2 {
+    align-items: center;
+    position: absolute;
+    opacity: 75%;
+    margin-left: 205px;
+    width: 445px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.pic3 {
+    align-items: center;
+    opacity: 50%;
+    position: absolute;
+    margin-left: 210px;
+    width: 445px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.homeclass{
+    padding-left: 700px;
+    margin-top: -570px;
+    padding-bottom: 130px;
+}
+
+#ab1 {
+    margin-top: -55px;
+    margin-left: -430px;
+    font-size: 80px;
+    font-family: "Solskin DEMO Regular";
+}
+
+#ab2 {
+    margin-left: -430px;
+    padding: 20px 0;
+    font-size: 40px;
+    font-family: "Boxiest Regular";
+    opacity: 80%;
+    background-color: antiquewhite;
+    width: 70%;
+    padding-left: 30px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+}
+
+.homie{
+    border-radius: 40px;
+    padding: 25px 85px;
+    font-family: "Starshines Regular";
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 30px;
+    background-color: rgba(50, 21, 49, 0.837);
+    border: none;
+    padding: 30px 90px;
+    margin-right: 990px;
+    margin-left: -430px;
+    color: white;
+}
+
+#ab3 {
+    margin-left: -430px;
+    font-size: 25px;
+    font-family: "Boxiest Regular";
+    opacity: 50%;
+}
+
+.in-view .bstar{
+    margin-left: -60px;
+    margin-top: -660px;
+    width: 110px;
+    height: 150px;
+    display: flex;
+    
+    animation: spinny 3s ease-in-out 2s;
+}
+@keyframes slidein2 {
+    0% {
+        transform: translateX(-600px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slidein3 {
+    0% {
+        transform: translateX(-1800px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slidein {
+    0% {
+        transform: translateX(600px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes logoanim {
+    0% {
+        transform: translateY(-500px) skewY(10px) skewX(-3deg);
+    }
+    50% {
+        transform: translateY(-15px) skewY(-3deg) skewX(3deg);
+    }
+    100% {
+        transform: translateY(-500px) skewY(10px) skewX(-3deg);
+    }
+}
+
+@keyframes picanim {
+    0% {
+        transform: translateY(30px) skewY(10px) skewX(-3deg);
+    }
+    50% {
+        transform: translateY(70px) skewY(-3deg) skewX(3deg);
+    }
+    100% {
+        transform: translateY(30px) skewY(10px) skewX(-3deg);
+    }
+}
+
+@keyframes spins {
+    0%{
+        transform: rotateZ(0deg);
+    }
+
+    50%{transform: rotateZ(1000deg);}
+
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes fade {
+    0% {
+        scale: 20%;
+    }
+    70%{
+        scale: 110%;
+    }
+    100% {
+        scale: 100%;
+    }
+}
+
+@keyframes spinny {
+    0%{
+        transform: scale(100%);
+        transform: rotate3d(0,1,0,0deg);
+    }
+
+    100%{
+        transform: scale(10%);
+        transform: rotate3d(0,1,0,1430deg);
+    }
+}
+
+figure.in-view .pic{
+    animation: picanim 5s ease-in-out infinite;
+}
+
+figure.in-view .pic2  {
+    animation: picanim 5.5s ease-in-out infinite;
+}
+
+figure.in-view .pic3{
+    animation: picanim 6s ease-in-out infinite;
+}
+
+figure.in-view .imagediv{
+    animation: slidein 3s ease-in-out;
+}
+
+figure.in-view .me{
+    animation: slidein2 3s ease-in-out;
+}
+
+figure.in-view .star1in{
+    animation: slidein3 3.2s ease-out;
+}
+
+figure.in-view .star2in{
+    animation: slidein3 3.5s ease-out;
+}
+
+figure.animate {
+    height: 2000px;
+    margin: 0;
+    display: inline;
+}
+
+figure.in-view .homeclass{
+    animation: fade 0.5s ease-in-out;
+}
