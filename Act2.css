@@ -1,0 +1,371 @@
+a{
+    color: rgb(255, 230, 117);
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.top-header {
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-cont {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 30px;
+    width: 100px;
+    height: 100px;
+    animation: logoanim 3s ease-in-out infinite;
+}
+
+body {
+    font-family: "Starshines Regular";
+}
+
+#Web {
+    font-size: 40px;
+}
+
+.menu {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.hire-me {
+    background-color: rgb(178, 154, 235);
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+.me {
+    margin-top: 30px;
+    margin-left: 150px;
+    border-radius: 25px;
+    width: 400px;
+    height: 600px;
+    overflow: hidden;
+}
+
+figure.in-view .me{
+    animation: slidein2 3s ease-in-out;
+}
+
+figure.in-view .star1in{
+    animation: slidein3 3.2s ease-out;
+}
+
+figure.in-view .star2in{
+    animation: slidein3 3.5s ease-out;
+}
+
+.cat {
+    margin-left: -65px;
+    width: 490px;
+    height: 600px;
+}
+
+.bodyt{
+    padding-top: 125px;
+    padding-left: 700px;
+    margin-top: -530px;
+    padding-bottom: 130px;
+}
+
+
+#bigboy {
+    font-size: 80px;
+    font-family: "Solskin DEMO Regular";
+}
+
+#medboy {
+    padding: 20px 0;
+    font-size: 40px;
+    font-family: "Boxiest Regular";
+    opacity: 70%;
+}
+
+#smolboy {
+    font-size: 25px;
+    font-family: "Boxiest Regular";
+    opacity: 50%;
+}
+
+#res,
+#con {
+    border-radius: 40px;
+    padding: 25px 85px;
+    font-family: "Starshines Regular";
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+#res {
+    background-color: rgb(178, 154, 235);
+    border: none;
+    padding: 30px 90px;
+    color: white;
+}
+
+#con {
+    border-radius: 40px;
+    border-width: 5px;
+    border-color: rgb(178, 154, 235);
+    color: rgb(24, 10, 77);
+}
+
+.star {
+    margin-left: 100px;
+    margin-top: -500px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    animation: spins 5s ease-in-out infinite;
+}
+
+.stars {
+    margin-top: 195px;
+    margin-left: 500px;
+    width: 100px;
+    height: 100px;
+    position: flex;
+    animation: spins 4s ease-in-out infinite;
+}
+
+.Aboutme {
+    background-image: url("abbg.png");
+    height: 830px;
+    width: 100%;
+    color: white;
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Starshines Regular";
+    font-weight: bolder;
+    background-color: rgba(50, 21, 49, 0.837);
+    width: 35%;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 40px;
+    margin-bottom: -30px;
+}
+
+.titleclass {
+    padding: 40px;
+    position: relative;
+}
+figure.in-view .imagediv{
+    animation: slidein 3s ease-in-out;
+}
+.imagediv {
+    margin-top: 60px;
+}
+
+@keyframes slidein2 {
+    0% {
+        transform: translateX(-600px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slidein3 {
+    0% {
+        transform: translateX(-1800px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slidein {
+    0% {
+        transform: translateX(600px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+figure.in-view .pic{
+    animation: picanim 5s ease-in-out infinite;
+}
+
+figure.in-view .pic2  {
+    animation: picanim 5.5s ease-in-out infinite;
+}
+
+figure.in-view .pic3{
+    animation: picanim 6s ease-in-out infinite;
+}
+.pic {
+    align-items: center;
+    position: absolute;
+    margin-left: 200px;
+    width: 445px;
+    height: 500px;  
+    border-radius: 20px;
+}
+
+@keyframes logoanim {
+    0% {
+        transform: translateY(-20px) skewY(10px) skewX(-3deg);
+    }
+    50% {
+        transform: translateY(20px) skewY(-3deg) skewX(3deg);
+    }
+    100% {
+        transform: translateY(-20pxpx) skewY(10px) skewX(-3deg);
+    }
+}
+
+@keyframes picanim {
+    0% {
+        transform: translateY(30px) skewY(10px) skewX(-3deg);
+    }
+    50% {
+        transform: translateY(70px) skewY(-3deg) skewX(3deg);
+    }
+    100% {
+        transform: translateY(30px) skewY(10px) skewX(-3deg);
+    }
+}
+
+.pic2 {
+    align-items: center;
+    position: absolute;
+    opacity: 75%;
+    margin-left: 205px;
+    width: 445px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.pic3 {
+    align-items: center;
+    opacity: 50%;
+    position: absolute;
+    margin-left: 210px;
+    width: 445px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+@keyframes spins {
+    0%{
+        transform: rotateZ(0deg);
+    }
+
+    50%{transform: rotateZ(1000deg);}
+
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+
+figure.animate {
+    height: 2000px;
+    margin: 0;
+    display: inline;
+}
+
+.homeclass{
+    padding-left: 700px;
+    margin-top: -570px;
+    padding-bottom: 130px;
+}
+
+figure.in-view .homeclass{
+    animation: fade 0.5s ease-in-out;
+}
+
+.homie{
+    border-radius: 40px;
+    padding: 25px 85px;
+    font-family: "Starshines Regular";
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 30px;
+    background-color: rgba(50, 21, 49, 0.837);
+    border: none;
+    padding: 30px 90px;
+    margin-right: 990px;
+    margin-left: -430px;
+    color: white;
+}
+
+@keyframes fade {
+    0% {
+        scale: 20%;
+    }
+    70%{
+        scale: 110%;
+    }
+    100% {
+        scale: 100%;
+    }
+}
+
+#ab1 {
+    margin-top: -55px;
+    margin-left: -430px;
+    font-size: 80px;
+    font-family: "Solskin DEMO Regular";
+}
+
+#ab2 {
+    margin-left: -430px;
+    padding: 20px 0;
+    font-size: 40px;
+    font-family: "Boxiest Regular";
+    opacity: 80%;
+    background-color: antiquewhite;
+    width: 70%;
+    padding-left: 30px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+}
+
+#ab3 {
+    margin-left: -430px;
+    font-size: 25px;
+    font-family: "Boxiest Regular";
+    opacity: 50%;
+}
+
+.in-view .bstar{
+    margin-left: -60px;
+    margin-top: -660px;
+    width: 110px;
+    height: 150px;
+    display: flex;
+    
+    animation: spinny 3s ease-in-out 2s;
+}
+
+@keyframes spinny {
+    0%{
+        transform: scale(100%);
+        transform: rotate3d(0,1,0,0deg);
+    }
+
+    100%{
+        transform: scale(10%);
+        transform: rotate3d(0,1,0,1430deg);
+    }
+
+
+}
