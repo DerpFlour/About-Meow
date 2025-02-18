@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Act2.css">
+    <link rel="stylesheet" href="Act2_AM.css">
     <title>About Me</title>
     <style>
         * {
@@ -11,74 +12,79 @@
             padding: 0;
         }
     </style>
-    
 </head>
-<body>
+<body id="home">
     
-    <div class="top-header" id="home">
+    <header class="top-header">
         <div class="top-cont">
             <img class="logo" src="pbb.png" alt="Logo">
             <h1 id="Web">Welcome!</h1>
         </div>
-        <div class="menu">
+        <nav class="menu">
             <p>Home</p>
             <a href="#scrollme">About</a>
             <p>Projects</p>
             <p>Contact</p>
             <p class="hire-me">Hire Me Pls</p>
-        </div>
-    </div>
+        </nav>
+    </header>
 
-    <figure class="animate"><div class="me">
-        <img class="cat" src="DSCF7543.JPG" alt="Me">
-    </div></figure>
-    <figure class="animate"><div class="star1in">
-        <img class="star" src="star.png" alt="Star">
-    </div></figure>
+        <figure class="animate">
+            <div class="me">
+                <img class="cat" src="DSCF7543.JPG" alt="Me">
+            </div>
+        </figure>
+        
+        <figure class="animate">
+            <div class="star1in">
+                <img class="star" src="star.png" alt="Star">
+            </div>
+        </figure>
+        
+        <figure class="animate">
+            <div class="star2in">
+                <img class="stars" src="star.png" alt="Stars">
+            </div>
+        </figure>
+
+        <section class="bodyt">
+            <p id="bigboy">Explore my <br>Portfolio</p>
+            <p id="medboy">Discover My Expertise as a Full Stack Developer</p>
+            <div class="buttons">
+                <button id="res">Resume</button>
+                <button id="con">Contact</button>
+            </div>
+            <p class="smolboy">Crafting Innovative Digital Solutions for Your Business</p>
+        </section>
+
+    <div id="scrollme"></div>
     
-    <figure class="animate"><div class="star2in">
-        <img class="stars" src="star.png" alt="Stars">
-    </div></figure>
-
-    <div class="bodyt">
-        <p id="bigboy">Explore my <br>Portfolio</p>
-        <p id="medboy">Discover My Expertise as a Full Stack Developer</p>
-        <div class="buttons">
-            <button id="res">Resume</button>
-            <button id="con">Contact</button>
-        </div>
-        <p id="smolboy">Crafting Innovative Digital Solutions for Your Business</p>
-    </div>
-
-    
-
-    <div class="Aboutme" id="scrollme">
+    <section class="Aboutme">
         <center>
             <div class="titleclass">
                 <p class="title">About Me</p>
-                <figure class="animate"><div class="imagediv">
-                    <center><figure class="animate"><img src="me2.png" class="pic3" alt="Picture 3"></figure></center> 
-                    <center><figure class="animate"><img src="me2.png" class="pic2" alt="Picture 2"></figure></center> 
-                    <center><figure class="animate"><img src="mememe.png" class="pic" alt="Picture"></figure></center> 
-                </div></figure>
+                <figure class="animate">
+                    <div class="imagediv">
+                        <center><img src="me2.png" class="pic3" alt="Picture 3"></center>
+                        <center><img src="me2.png" class="pic2" alt="Picture 2"></center>
+                        <center><img src="mememe.png" class="pic" alt="Picture"></center>
+                    </div>
+                </figure>
             </div>
         </center>
-        
-           
-        </div>
-    </div>
-    <figure class="animate"><div class="homeclass">
-        
-        <img class="bstar" src="starry.png" alt="Stars">=
-        <p id="ab1">About Me</p>
-        <p id="ab2">blah blah blah blah blah blah blah blah...<br>and thats pretty much it!</p>
-        <div class="homie">
-            <a href="#home">Home</a>
-        </div>
-        <p id="ab3">That's the end of my site, click the hyperlink above to go back to the start!</p>
-    </div></figure>
-
+    </section>
     
+    <figure class="animate">
+        <div class="homeclass">
+            <img class="bstar" src="starry.png" alt="Stars">
+            <p id="ab1">About Me</p>
+            <p id="ab2">blah blah blah blah blah blah blah blah...<br>and that's pretty much it!</p>
+            <div class="homie">
+                <a href="#home">Home</a>
+            </div>
+            <p id="ab3">That's the end of my site, click the link above to go back to the start!</p>
+        </div>
+    </figure>
 
     <script src="Act2.js"></script>
 </body>
