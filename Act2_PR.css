@@ -1,0 +1,62 @@
+#projects{
+    padding-top: 10%;
+    height: 1250px;
+    max-width: 100%;
+}
+
+.catt {
+    margin-left: -43px;
+    width: 490px;
+    height: 600px;
+    flex: content;
+}
+
+.neek {
+    margin-top: -5%;
+    margin-left: 2%;
+    border-radius: 15px;
+    width: 220px;
+    height: 220px;
+    position: relative;
+    animation: drawanim 4.5s ease-in-out infinite;
+}
+
+.juno {
+    margin-left: 30%;
+    border-radius: 15px;
+    margin-top: 12%;
+    width: 220px;
+    height: 220px;
+    position: relative;
+    animation: drawanim 4s ease-in-out infinite;
+}
+.projbod{
+    padding-top: -5px;
+    padding-left: 700px;
+    flex-wrap: wrap;
+    margin-top: -530px;
+    padding-bottom: 20px;
+}
+
+.neekin {
+    margin-top: -550px;
+}
+
+@keyframes drawanim {
+    0% {
+        transform: translateY(20px) skewY(10px) skewX(-3deg);
+        box-shadow: 0 0 50px 5px rgb(220, 87, 213);
+    }
+    50% {
+        transform: translateY(50px) skewY(-3deg) skewX(3deg);
+        box-shadow: 0 0 50px 10px rgba(250, 255, 98, 0);
+    }
+    100% {
+        transform: translateY(20px) skewY(10px) skewX(-3deg);
+        box-shadow: 0 0 50px 5px rgb(220, 87, 213);
+    }
+}
+
+figure.in-view .neekin{
+    animation: slidein3 3.5s ease-out;
+}

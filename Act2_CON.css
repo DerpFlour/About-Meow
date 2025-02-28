@@ -1,0 +1,12 @@
+.contactcon{
+    height: 800px;
+    background-color: rgb(94, 35, 231);
+}
+
+.conbody{
+    padding-top: 15%;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -530px;
+    padding-bottom: 20px;
+}
