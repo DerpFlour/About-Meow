@@ -37,7 +37,7 @@
         }
     
         /* Center text blocks */
-        .bodyt, .projbod, .conbody {
+        .bodyt, .conbody {
             width: 90%;
             text-align: center;
             margin: 0 auto;
@@ -74,9 +74,82 @@
         .projbod {
             background-color: #9b5de5;
             width: 100%;
-            padding: 20px;
+            padding: none;
+                padding-top: -5px;
+                padding-left: 0px;
+                flex-wrap: unset;
+                margin-top: 0px;
+                padding-bottom: 20px;
+            
+            
+        }
+        
+        #mediboy {
+            padding: 20px 0;
+            margin-left: 50px;
+            display: flex;
+            font-size: 40px;
+            font-family: "Boxiest Regular";
+            opacity: 70%;
         }
 
+        #resi {
+            
+            border-radius: 20px;
+            border-width: 5px;
+            font-size: 1rem;
+            margin-top: 170px;
+            padding: 5px 90px;
+            margin-bottom: 5px;
+            align-items: center;
+            padding-left: 20px;
+            text-align: center;
+            margin-left: -1000px;
+            border-color: rgb(178, 154, 235);
+            color: rgb(24, 10, 77);
+            content: 'My Projects';
+        }
+        
+        #coni {
+            border-radius: 40px;
+            border-width: 5px;
+            font-size: 1rem;
+            padding: 20px 130px;
+            padding-left: 70px;
+            text-align: center;
+            margin-left: -1000px;
+            border-color: rgb(178, 154, 235);
+            color: rgb(24, 10, 77);
+            content: 'help';
+        }
+
+        #resi:after {
+            content: "My Projects";
+        }
+        
+        #coni:after {
+            content: "CONTACT";
+        }
+
+        #resi span,
+        #coni span{
+            display: none;
+        }
+
+        .contactcon{
+            z-index: -5;
+            height: 600px;
+            background-color: rgb(172, 150, 75);
+        }
+        
+        .conbody{
+            padding-top: 0%;
+            align-items: center;
+            flex-wrap: unset;
+            margin-top: 0px;
+            padding-bottom: 70px;
+        }
+        
         #projects{
             padding: 0;
             height: 1250px;
@@ -124,7 +197,7 @@
         body.menu-open {
             overflow: hidden;
         }
-    
+        
         .menu a {
             font-size: 24px;
             margin: 15px 0;
