@@ -24,21 +24,28 @@
             <img class="logo" src="pbb.png" alt="Logo">
             <h1 id="Web">Welcome!</h1>
         </div>
+    
+        <!-- Sticky Menu Button (Initially Shows Menu Icon) -->
+        <button class="mobilemenubtn" onclick="toggleMenu()">
+            <img id="menu-icon" src="burgbutt.png" alt="Menu">
+        </button>
+    
+        <!-- Full-Screen Menu -->
         <nav class="menu">
-            <a id="#mobileshow" href="#home">Home</a>
-            <a id="#mobileshow" href="#scrollme">About</a>
-            <a id="#mobileshow" href="#projects">Projects</a>
-            <a id="#mobileshow" href="#contact">Contact</a>
-            <p id="#mobileshow" class="hire-me">Hire Me Pls</p>
+            <a href="#home" onclick="closeMenu()">Home</a>
+            <a href="#scrollme" onclick="closeMenu()">About</a>
+            <a href="#projects" onclick="closeMenu()">Projects</a>
+            <a href="#contact" onclick="closeMenu()">Contact</a>
+            <p class="hire-me" onclick="closeMenu()">Hire Me Pls</p>
         </nav>
     </header>
-
+<!--
     <div class="mobilemenubtn">
         <img src="self.png" alt="" onclick="toggleMenu">
     </div>
 </div>
 
-<!-- Mobile Menu -->
+ Mobile Menu 
 <div class="mobilemenu">
     <img src="star.png" alt="" onclick="toggleMenu">
     <a href="#home">Home</a>
@@ -46,7 +53,7 @@
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
     <a href="#" class="hire-me">Hire Me</a>
-</div>
+</div>-->
 
     <div class="hero-container">
         <figure class="animate">
@@ -165,15 +172,28 @@
         © 2025 Dan Rodriguez. All rights reserved.</p>
     </div>
 </footer>
-
-
 <script>
-    function toggleMenu() {
-        const mobilemenu = document.querySelector('.mobilemenu')
-        mobilemenu.style.display='block';
-    }
+    document.addEventListener("DOMContentLoaded", function () {
+        const menu = document.querySelector(".menu");
+        const menuButton = document.querySelector(".mobilemenubtn");
+        const menuLinks = document.querySelectorAll(".menu a");
+        const body = document.body;
+
+        menuButton.addEventListener("click", function () {
+            menu.classList.toggle("active");
+            body.classList.toggle("menu-open"); // Prevents scrolling
+        });
+
+        menuLinks.forEach(link => {
+            link.addEventListener("click", function () {
+                menu.classList.remove("active");
+                body.classList.remove("menu-open"); // Allow scrolling again
+            });
+        });
+    });
 </script>
 
     <script src="Act2.js"></script>
 </body>
 </html>
+
