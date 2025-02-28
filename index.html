@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Act2.css">
     <link rel="stylesheet" href="Act2_AM.css">
+    <link rel="stylesheet" href="Act2_Mobile.css">
+    <link rel="stylesheet" href="Act2_PR.css">
+    <link rel="stylesheet" href="Act2_CON.css">
+    
     <title>About Me</title>
     <style>
         * {
@@ -21,14 +25,30 @@
             <h1 id="Web">Welcome!</h1>
         </div>
         <nav class="menu">
-            <p>Home</p>
-            <a href="#scrollme">About</a>
-            <p>Projects</p>
-            <p>Contact</p>
-            <p class="hire-me">Hire Me Pls</p>
+            <a id="#mobileshow" href="#home">Home</a>
+            <a id="#mobileshow" href="#scrollme">About</a>
+            <a id="#mobileshow" href="#projects">Projects</a>
+            <a id="#mobileshow" href="#contact">Contact</a>
+            <p id="#mobileshow" class="hire-me">Hire Me Pls</p>
         </nav>
     </header>
 
+    <div class="mobilemenubtn">
+        <img src="self.png" alt="" onclick="toggleMenu">
+    </div>
+</div>
+
+<!-- Mobile Menu -->
+<div class="mobilemenu">
+    <img src="star.png" alt="" onclick="toggleMenu">
+    <a href="#home">Home</a>
+    <a href="#scrollme">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="#" class="hire-me">Hire Me</a>
+</div>
+
+    <div class="hero-container">
         <figure class="animate">
             <div class="me">
                 <img class="cat" src="DSCF7543.JPG" alt="Me">
@@ -56,6 +76,7 @@
             </div>
             <p class="smolboy">Crafting Innovative Digital Solutions for Your Business</p>
         </section>
+    </div>
 
     <div id="scrollme"></div>
     
@@ -80,11 +101,71 @@
             <p id="ab1">About Me</p>
             <p id="ab2">blah blah blah blah blah blah blah blah...<br>and that's pretty much it!</p>
             <div class="homie">
-                <a href="#home">Home</a>
+                <a class="homeword" href="#home">Home</a>
             </div>
-            <p id="ab3">That's the end of my site, click the link above to go back to the start!</p>
+            <p id="ab3">You can continue scrolling down or return to the homepage!</p>
         </div>
     </figure>
+
+<section id="projects">
+    
+            <figure class="animate">
+                <div class="me">
+                    <img class="catt" src="Self.jpg" alt="Me">
+                </div>
+            </figure>
+            
+            <figure class="animate">
+                <div class="neekin">
+                    <img class="neek" src="neek.png" alt="Star">
+                </div>
+            </figure>
+            
+            <figure class="animate">
+                <div class="star2in">
+                    <img class="juno" src="junopfpqt_wip.png" alt="Stars">
+                </div>
+            </figure>
+    
+            <section class="projbod">
+                <p id="bigboy">My <br>Projects</p>
+                <p id="medboy">Here's some of the art I make</p>
+                <div class="buttons">
+                    <button id="res">Okay</button>
+                    <button id="con">Cool</button>
+                </div>
+                <p class="smolboy">Scroll down to get to the bottom of the page</p>
+            </section>
+</section>
+<div id="contact">
+
+<center><div class="contactcon">
+
+    <section class="conbody">
+        <p id="bigboy">Contact Me</p>
+        <p id="medboy">Shoot me a message through any of my contact channels</p>
+        <div class="buttons">
+            <button id="res">Resume</button>
+            <button id="con">Contact</button>
+        </div>
+    </section>
+</div></center>
+</div>
+
+<footer>
+    <div>
+        <p>
+        © 2025 Dan Rodriguez. All rights reserved.</p>
+    </div>
+</footer>
+
+
+<script>
+    function toggleMenu() {
+        const mobilemenu = document.querySelector('.mobilemenu')
+        mobilemenu.style.display='block';
+    }
+</script>
 
     <script src="Act2.js"></script>
 </body>
