@@ -45,6 +45,10 @@ body {
     font-family: "Starshines Regular";
 }
 
+
+#menu-icon{
+    display: none;
+}
 #scrollme{
     height: 100px;
     background-color:#5e23e7;
@@ -63,6 +67,7 @@ body {
 
 .top-cont {
     display: flex;
+    position: relative;
     align-items: center;
 }
 
@@ -89,6 +94,7 @@ body {
     padding: 10px 20px;
     border-radius: 15px;
     color: white;
+    display: block;
 }
 
 .hero-container{
@@ -210,7 +216,7 @@ footer div p{
     color: rgb(85, 85, 85);
     font-size: 14px;
 }
-
+/*
 .mobilemenubtn{
     display: none;
 }
@@ -240,3 +246,4 @@ footer div p{
 #mobileshow { 
     display:none; 
     }
+*/
