@@ -26,8 +26,16 @@
 }
 
 a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+a:hover{
     color: rgb(255, 230, 117);
     text-decoration: none;
+    transition: 0.2s;
+
 }
 html {
     scroll-behavior: smooth;
@@ -39,6 +47,7 @@ body {
 
 #scrollme{
     height: 100px;
+    background-color: rgb(94, 35, 231);
 }
 .top-header {
     padding: 30px 100px;
@@ -49,7 +58,7 @@ body {
     top: 0;
     z-index: 999;
     background-color: white;
-    padding-bottom: 15px;
+    max-width: 100%;
 }
 
 .top-cont {
@@ -82,11 +91,19 @@ body {
     color: white;
 }
 
+.hero-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(94, 35, 231);
+    padding: 50px 100px;
+}
+
 .me {
     margin-top: 30px;
     margin-left: 150px;
     border-radius: 25px;
-    width: 400px;
+    max-width: 400px;
     height: 600px;
     overflow: hidden;
 }
@@ -98,8 +115,8 @@ body {
 }
 
 .star {
-    margin-left: 100px;
-    margin-top: -500px;
+    margin-left: -450px;
+    margin-top: 120px;
     width: 100px;
     height: 100px;
     display: flex;
@@ -107,8 +124,8 @@ body {
 }
 
 .stars {
-    margin-top: 195px;
-    margin-left: 500px;
+    margin-top: 400px;
+    margin-left: -50px;
     width: 100px;
     height: 100px;
     position: flex;
@@ -116,8 +133,9 @@ body {
 }
 
 .bodyt{
-    padding-top: 125px;
+    padding-top: 360px;
     padding-left: 700px;
+    flex-wrap: wrap;
     margin-top: -530px;
     padding-bottom: 20px;
 }
@@ -163,3 +181,54 @@ body {
     border-color: rgb(178, 154, 235);
     color: rgb(24, 10, 77);
 }
+
+footer{
+    height: 150px;
+    background: rgb(230, 230, 230);
+}
+
+footer div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div p{
+    margin-top: -5px;
+    text-align: center;
+    color: rgb(85, 85, 85);
+    font-size: 14px;
+}
+
+.mobilemenubtn{
+    display: none;
+}
+
+.mobilemenbtn img{
+    width: 50px;
+    display: none;
+}
+
+.mobilemenu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    z-index: 9999;
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    transition: all ease-in-out;
+}
+
+.mobilemenu.active{
+    display: flex;
+}
+
+#mobileshow { 
+    display:none; 
+    }
