@@ -47,7 +47,7 @@ body {
 
 #scrollme{
     height: 100px;
-    background-color: rgb(94, 35, 231);
+    background-color:#5e23e7;
 }
 .top-header {
     padding: 30px 100px;
@@ -95,7 +95,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: rgb(94, 35, 231);
+    background-color: #5e23e7;
     padding: 50px 100px;
 }
 
@@ -164,7 +164,16 @@ body {
     font-family: "Starshines Regular";
     justify-content: space-between;
     margin-bottom: 30px;
-    font-size: 30px;
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+#res:hover,
+#con:hover {
+    background-color: rgb(228, 199, 114);
+    color: white;
+    border-color: rgb(188, 165, 97);
+    transition: 0.3s;
 }
 
 #res {
