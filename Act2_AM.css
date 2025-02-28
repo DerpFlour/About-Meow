@@ -25,6 +25,10 @@
 
 .imagediv {
     margin-top: 60px;
+    width: 200px;
+    height: 400px;
+    position: relative;
+    z-index: 1;
 }
 
 .pic {
@@ -59,7 +63,7 @@
 .homeclass{
     padding-left: 700px;
     margin-top: -570px;
-    padding-bottom: 130px;
+    padding-bottom: 200px;
 }
 
 #ab1 {
@@ -83,8 +87,14 @@
 }
 
 .homie{
+    position: relative;
+    z-index: 998;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.homeword{
     border-radius: 40px;
-    padding: 25px 85px;
     font-family: "Starshines Regular";
     justify-content: space-between;
     margin-bottom: 30px;
@@ -94,7 +104,23 @@
     padding: 30px 90px;
     margin-right: 990px;
     margin-left: -430px;
-    color: white;
+    color: rgb(0, 0, 0);
+    z-index: 998;
+}
+
+a.homeword:hover{
+    border-radius: 40px;
+    font-family: "Starshines Regular";
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 30px;
+    background-color: rgba(94, 80, 36, 0.837);
+    border: none;
+    padding: 30px 90px;
+    margin-right: 990px;
+    margin-left: -430px;
+    color: rgb(238, 238, 214);
+    z-index: 998;
 }
 
 #ab3 {
@@ -113,6 +139,7 @@
     
     animation: spinny 3s ease-in-out 2s;
 }
+
 @keyframes slidein2 {
     0% {
         transform: translateX(-600px);
@@ -224,12 +251,16 @@ figure.in-view .star1in{
     animation: slidein3 3.2s ease-out;
 }
 
+figure.in-view .neekin{
+    animation: slidein3 3.5s ease-out;
+}
+
 figure.in-view .star2in{
     animation: slidein3 3.5s ease-out;
 }
 
 figure.animate {
-    height: 2000px;
+    height: 600px;
     margin: 0;
     display: inline;
 }
