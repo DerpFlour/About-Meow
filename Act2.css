@@ -156,6 +156,12 @@ body {
     font-family: "Boxiest Regular";
     opacity: 70%;
 }
+#mediboy {
+    padding: 20px 0;
+    font-size: 40px;
+    font-family: "Boxiest Regular";
+    opacity: 70%;
+}
 
 .smolboy {
     font-size: 25px;
@@ -164,7 +170,9 @@ body {
 }
 
 #res,
-#con {
+#con,
+#resi,
+#coni {
     border-radius: 40px;
     padding: 25px 85px;
     font-family: "Starshines Regular";
@@ -175,7 +183,9 @@ body {
 }
 
 #res:hover,
-#con:hover {
+#con:hover,
+#resi:hover,
+#coni:hover {
     background-color: rgb(228, 199, 114);
     color: white;
     border-color: rgb(188, 165, 97);
@@ -196,6 +206,20 @@ body {
     color: rgb(24, 10, 77);
 }
 
+#resi {
+    background-color: rgb(178, 154, 235);
+    border: none;
+    padding: 30px 90px;
+    color: white;
+}
+
+#coni {
+    border-radius: 40px;
+    border-width: 5px;
+    border-color: rgb(178, 154, 235);
+    color: rgb(24, 10, 77);
+    content: 'Go Down?';
+}
 footer{
     height: 150px;
     background: rgb(230, 230, 230);
